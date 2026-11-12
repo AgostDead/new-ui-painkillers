@@ -192,7 +192,7 @@ Frame5.Size = UDim2.new(1, 0, 1, 0)
 UIListLayout.Parent = Frame5
 UIListLayout.FillDirection = Enum.FillDirection.Horizontal
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout.Padding = UDim.new(0, 2)
+UIListLayout.Padding = UDim.new(0, 1)
 Frame6.Parent = ImageLabel4
 Frame6.BackgroundColor3 = Color3.new(0.12549, 0.227451, 0.372549)
 Frame6.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
@@ -1120,7 +1120,8 @@ function t3.AddWindow(_, p13, p14)
 
 		clone2.Parent = v159
 		clone2.Text = text2
-		clone2.Size = UDim2.new(0, v96(clone2), 0, 20)
+		clone2.TextSize = 12
+		clone2.Size = UDim2.new(0, v96(clone2) - 20, 0, 20)
 		clone2.ZIndex = clone2.ZIndex + n3 * 10
 
 		local v163 = clone2
